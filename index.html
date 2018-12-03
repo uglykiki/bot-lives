@@ -1,13 +1,15 @@
-<html lang="">
+<html lang="eng">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Alfa+Slab+One" rel="stylesheet">
+    <!--- import google fonts--->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Alfa+Slab+One" rel="stylesheet">
     <script src="bot.js"></script>
-    <title></title>
+    <title>chatbot net-art</title>
 </head>
 <body>
+
    <div class="ascii-art bubble1">
   .--------------.
  /                \
@@ -26,15 +28,22 @@
           / /         
           /
     </div>
+    <!--- create body group--->
     <div class="bodyimg">
+        <!--- chatbot body--->
         <img class="pchead" src="images/pc.png">
         <img class="body" src="images/man1.png">
-        <img class="fightR" src="images/fightR.png">
+        
+        <!--- left video man--->
         <img class="fightL" src="images/fightL.png">
         <iframe class="video-1" width="240" height="130" src="https://www.youtube.com/embed/HGcKu3SYx9A?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
+        <!--- right video man--->
+        <img class="fightR" src="images/fightR.png">
         <iframe class="video-2" width="240" height="130" src="https://www.youtube.com/embed/aPfci3bmcDE?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    
+    <!--- netart title--->
     <div class="title">
     After You Die, <br>
     Your Digital Self <br>
@@ -42,6 +51,7 @@
     as a <br>
     "CHATBOT"
     </div>
+    
     <div class="ascii-art bubble3">
   .--------------.
  /    What is     \
@@ -92,9 +102,7 @@
                  |________|
     </div>
 
-  
-<!--    <h2 id="chat">The An-ti social Joe</h2>-->
-
+    <!--- chatbot input--->
     <div id="bodybox">
         <div id="chatborder">
         <p id="chatlog7" class="chatlog">&nbsp;</p>
@@ -107,6 +115,5 @@
         <input type="text" name="chat" id="chatbox" placeholder="Hello. I am Joe. Talk to me." onfocus="placeHolder()">
         </div>
     </div>
-    
 </body>
 </html>

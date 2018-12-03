@@ -41,9 +41,6 @@ input{
     font-family: 'Inconsolata', monospace;
 }
 
-h1 {
-  margin: auto;
-}
 p{line-height:18px;}
 
 pre {
@@ -59,6 +56,7 @@ pre {
     justify-content: center;
 */
 }
+/* body group*/
 .pchead{ 
     max-width:580px;  
     height:auto;  
@@ -88,7 +86,6 @@ pre {
     top:720px;
     z-index:-2;
 }
-
 .video-1{
     position:absolute;
     top:700px;
