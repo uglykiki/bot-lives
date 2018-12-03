@@ -1,0 +1,154 @@
+body {
+    font: 16px sans-serif;
+    padding-bottom: 15px;
+    background-color: #774898;
+    padding:0px;
+  
+}
+
+/*
+.mainbox{
+    margin: 80px auto;
+    max-width: 440px;
+    background-color: white;
+    border-radius: 20px;
+    padding:48px;
+}
+*/
+
+#bodybox {
+    margin: 120px auto;
+    color:#00a8b5;
+    max-width: 360px;
+    font: 16px;
+    background-color: black;
+/*    border-radius: 20px;*/
+    padding:16px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.chatlog {
+   font: 14px;
+}
+
+input{
+    font: 16px;
+    height: 22px;
+    width: 100%;
+    padding:8px;
+    border-radius: 40px;
+    height:36px;
+    font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+  margin: auto;
+}
+p{line-height:18px;}
+
+pre {
+  background-color: #f0f0f0;
+  margin-left: 20px;
+}
+.bodyimg{
+    position:absolute;
+    margin: -50px auto;
+    width:100%;
+/*
+    display:flex;
+    justify-content: center;
+*/
+}
+.pchead{ 
+    max-width:580px;  
+    height:auto;  
+    position:absolute;
+    left:27%;
+    z-index:-1;
+}
+.body{
+    width:720px;  
+    height:auto; 
+    position:absolute;
+    left:17%;
+    top:120px;
+    z-index:-2;
+}
+.fightL{
+    position:absolute;
+    top:720px;
+    z-index:-2;
+    left:2%;
+    transform: rotate(-10deg);
+}
+
+.fightR{
+    position:absolute;
+    right:12%;
+    top:720px;
+    z-index:-2;
+}
+
+.video-1{
+    position:absolute;
+    top:700px;
+    z-index:2;
+    left:16%;
+    transform: rotate(-10deg);
+    border: solid 10px white;
+    border-radius: 20px;
+    background-color:white;
+    
+}
+.video-2{
+    position:absolute;
+    right:12%;
+    top:700px;
+    z-index:0;
+    transform: rotate(0deg);
+    border: solid 10px white;
+    border-radius: 20px;
+    background-color:white;
+}
+.title{
+    position:absolute;
+    z-index:1;
+    font-size: 100px;
+    width:100%;
+    top:430px;
+    text-align:center;
+    color:#fbb901;
+    font-family: 'Alfa Slab One', cursive;
+    text-shadow: 2px 5px 20px #5A357C;
+    
+}
+.ascii-art {
+    font-family: 'Inconsolata', monospace;
+    white-space: pre;
+    color:pink;
+    font-size:16px;
+    position:absolute;
+    font-weight:600;
+}
+.bubble1{
+    left:20%;
+}
+.bubble2{ 
+    right:8%;
+    top:400px;
+}
+.bubble3{ 
+    left:8%;
+    top:640px;
+    z-index:3;
+}
+.robot{
+    top:700px;
+    left:30%;
+}
+.robothead{
+    color:white;
+    top:640px;
+    left:33%;
+    font-size:20;
+}
