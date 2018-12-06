@@ -51,6 +51,7 @@ p{line-height: 32px;}
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 body {
     font: 16px sans-serif;
@@ -352,6 +353,7 @@ pre {
 }
 .btn a{
     color:mediumpurple;
+    cursor: pointer;
 }
 
 /* Darker background on mouse-over */
@@ -399,6 +401,15 @@ pre {
     }
     .bubble1{
         top:20px;
+    }
+    .bubble2{
+        right:0px;
+    }
+    .bubble3{
+        top:800px
+    }
+    .robothead{
+        display:none;
     }
 }
 
@@ -464,9 +475,6 @@ pre {
         text-align:left;
         top:960px;
         position:absolute;
-    }
-    .robothead{
-        display:none;
     }
     .btn{
         top:1280px;
