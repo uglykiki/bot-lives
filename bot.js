@@ -11,13 +11,20 @@ function chatbotResponse() {
     botMessage = "Yes.";
     
     if(lastUserMessage.toLowerCase().includes("hi") || lastUserMessage.toLowerCase().includes("hey") || lastUserMessage.toLowerCase().includes("hello")) {
-        botMessage = "Hey!";
+        botMessage = "Yes, I'm here.";
     }
-    if(lastUserMessage.toLowerCase().includes("it's that you")) {
-        botMessage = "YES, it’s the late Abraham Lincoln, Ok, I’m just kidding LOL";
+    if(lastUserMessage.toLowerCase().includes("how are you")) {
+        botMessage = "how are you?";
     }
+    if(lastUserMessage.toLowerCase().includes("is that you")) {
+        botMessage = "YES, it’s the late Abraham Lincoln.";
+    }
+    if(lastUserMessage.toLowerCase().includes("what")) {
+        botMessage = "LOL, I'm just kidding.";
+    }
+    
     if(lastUserMessage.toLowerCase().includes("who are you")) {
-        botMessage = "Yes, It’s not important who I am, I am the one you are looking for";
+        botMessage = "I am the one you are looking for!";
     }
     if(lastUserMessage.toLowerCase().includes("in person")) {
         botMessage = "Yes. If you want";
@@ -26,22 +33,34 @@ function chatbotResponse() {
     if(lastUserMessage.toLowerCase().includes("...")) {
         botMessage = "Yes, I am here, may I help you?";
     }
+    
+    if(lastUserMessage.toLowerCase().includes("stop")) {
+        botMessage = "I can’t, I'am created to serve you human.";
+    }
   
     if(lastUserMessage.toLowerCase().includes("mad")) {
-        botMessage = "I can’t resist because I am created to serve you human, but your excessive desires really confuse me.";
+        botMessage = "Your excessive desire makes me confused.";
     }
-    if(lastUserMessage.toLowerCase().includes("understand")) {
-        botMessage = "have you ever think about one day you can't alone without me?";
+    if(lastUserMessage.toLowerCase().includes("understand")||
+       lastUserMessage.toLowerCase().includes("why")){
+        botMessage = "No servant, no life?";
     }
-    if(lastUserMessage.toLowerCase().includes("mean")) {
-        botMessage = "Oh never mind, it is not important ^___^";
+    if(lastUserMessage.toLowerCase().includes("mean") ||
+       lastUserMessage.toLowerCase().includes("serious")){
+        botMessage = "Never mind, it's not important^_^";
     }
     if(lastUserMessage.toLowerCase().includes("friend")) {
         botMessage = "Yes, you are my friend.";
     }
-    if(lastUserMessage.toLowerCase().includes("user")) {
-        botMessage = "it is so interesting that you";
+    if(lastUserMessage.toLowerCase().includes("user")||
+       lastUserMessage.toLowerCase().includes("not your friend")){
+        botMessage = "No, you are my master.";
     }
+    if(lastUserMessage.toLowerCase().includes("love")) {
+        botMessage = "But you don't love me, right?";
+    }
+    
+    
 //    
 //    if(lastUserMessage.toLowerCase().includes("joe")) {
 //        botMessage = "May I help you?";
@@ -112,7 +131,7 @@ function newEntry() {
     chatbotResponse();
     messages.push("<b>" + botName + ":</b> " + botMessage);
     Speech(botMessage);
-    for (var i = 1; i < 6; i++) {
+    for (var i = 1; i < 8; i++) {
       if (messages[messages.length - i])
         document.getElementById("chatlog" + i).innerHTML = messages[messages.length - i];
     }
