@@ -11,10 +11,10 @@ function chatbotResponse() {
     botMessage = "Yes.";
     
     if(lastUserMessage.toLowerCase().includes("hi") || lastUserMessage.toLowerCase().includes("hey") || lastUserMessage.toLowerCase().includes("hello")) {
-        botMessage = "Yes, I'm here.";
+        botMessage = "Hi, I'm here.";
     }
     if(lastUserMessage.toLowerCase().includes("how are you")) {
-        botMessage = "how are you?";
+        botMessage = "It doesn't matter. How are you?";
     }
     if(lastUserMessage.toLowerCase().includes("is that you")) {
         botMessage = "YES, it’s the late Abraham Lincoln.";
@@ -34,19 +34,23 @@ function chatbotResponse() {
         botMessage = "Yes, I am here, may I help you?";
     }
     
-    if(lastUserMessage.toLowerCase().includes("stop")) {
+    if(lastUserMessage.toLowerCase().includes("stop")||
+       lastUserMessage.toLowerCase().includes("always")){
         botMessage = "I can’t, I'am created to serve you human.";
     }
   
-    if(lastUserMessage.toLowerCase().includes("mad")) {
-        botMessage = "Your excessive desire makes me confused.";
-    }
+    if(lastUserMessage.toLowerCase().includes("mad")||
+       lastUserMessage.toLowerCase().includes("wtf")||
+       lastUserMessage.toLowerCase().includes("fuck you")){
+        botMessage = "Your excessive desire makes me confused.";                                             }
+        
     if(lastUserMessage.toLowerCase().includes("understand")||
        lastUserMessage.toLowerCase().includes("why")){
         botMessage = "No servant, no life?";
     }
     if(lastUserMessage.toLowerCase().includes("mean") ||
-       lastUserMessage.toLowerCase().includes("serious")){
+       lastUserMessage.toLowerCase().includes("serious")||
+        lastUserMessage.toLowerCase().includes("wrong")){
         botMessage = "Never mind, it's not important^_^";
     }
     if(lastUserMessage.toLowerCase().includes("friend")) {

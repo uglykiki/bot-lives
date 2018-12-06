@@ -359,6 +359,10 @@ pre {
     background-color: white;
 }
 
+@media only screen and (min-width: 1920px){
+    
+    
+}
 
 
 /*----responsive----*/
@@ -381,7 +385,7 @@ pre {
     .fightR,.video-2{
         right:-1%;
     }
-    .titl{
+    .title{
         left:16px;
         width:98%;
     }
@@ -392,6 +396,9 @@ pre {
     }
     .dialogue{
         
+    }
+    .bubble1{
+        top:20px;
     }
 }
 
