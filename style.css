@@ -236,7 +236,7 @@ pre {
 }
 
 .fightL{
-    width:600px;
+    width:45%;
     position:absolute;
     top:800px;
     z-index:-2;
@@ -245,7 +245,7 @@ pre {
 }
 
 .fightR{
-    width:600px;
+    width:45%;
     position:absolute;
     right:16%;
     top:800px;
@@ -336,6 +336,7 @@ pre {
     
 }
 .btn {
+    color:white;
     width:120px;
     position:relative;
     margin:0px auto;
@@ -343,39 +344,74 @@ pre {
     z-index:10;
     background-color: #79d180;
     border: none;
-    color: white;
     padding: 12px 24px;
     cursor: pointer;
     font-size: 14px;
     border-radius: 100px;
     top:360px;
 }
+.btn a{
+    color:mediumpurple;
+}
 
 /* Darker background on mouse-over */
 .btn:hover {
-    background-color: #5ab962;
-    
+    background-color: white;
 }
 
 
 
 /*----responsive----*/
 @media only screen and (max-width: 768px) {
-    
-    
+    .pcman img{
+        width:90%;
+    }
+    .falling img{
+        width:10%;
+    }
+    .fightL, .fightR{
+        width:90%;
+    }
+    .fightL, .video-1{
+        top:1200px;
+    }
+    .fightL{
+        left:-10%;
+    }
+    .fightR,.video-2{
+        right:-1%;
+    }
+    .titl{
+        left:16px;
+        width:98%;
+    }
+    .btn{
+        font-size:28px;
+        width:240px;
+        padding:18px 24px;
+    }
+    .dialogue{
+        
+    }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
     body{
         overflow-x:hidden;
     }
+    .chatlog{
+        line-height: 16px;
+    }
+    .pcman img{
+        width:130%;
+        margin-left:-72px;
+    }
     #bodybox{
-        width:240px;
-        font-size:2;
-        position:absolute;
+        width:220px;
+        font-size:14px;
         z-index:5;
-        margin-top:4px;
-        left:16%;
+        top:72px;
+        
     }
     input{
         padding:4px;
@@ -384,49 +420,61 @@ pre {
     .bodyimg{
         margin-top:20px;
     }
-    .pchead{ 
-        max-width:400px;
-        left:-4%;
-    }
-    .body{
-        left:-30%;
-        width:540px
-    }
+
     .title{
         width:100%;
 /*        left:20%;*/
         text-align:center;
         font-size:60px;
-        top:300px;
+        top:360px;
     }
     .fightL{
-        top: 900px;
-        left:-40%;
+        width:120%;
+        top: 960px;
+/*        left:-40%;*/
     }
     .video-1{
         top:880px;
         transform: rotate(-5deg);
     }
     .fightR{
-        top: 1200px;
-        right:-4%;
+        width:120%;
+        top: 1250px;
         
     }
     .video-2{
         top: 1150px;
         left:50%;
-        transform: rotate(10deg);
+        transform: rotate(15deg);
         
+    }
+    .falling img{
+        width:12%;
     }
     .dialogue{
         width:80%;
-        left:16px;
+        font-size:14px;
         text-align:left;
         top:960px;
         position:absolute;
     }
     .robothead{
         display:none;
+    }
+    .btn{
+        top:1280px;
+    }
+    .bubble1{
+        top:4px;
+        left:72px;
+    }
+    .bubble2{
+        top:460px;
+        right:-20px;
+    }
+    .bubble3{
+        top:780px;
+        z-index:9;
     }
     
 }
