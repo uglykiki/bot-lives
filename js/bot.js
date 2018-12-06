@@ -44,16 +44,17 @@ function chatbotResponse() {
        lastUserMessage.toLowerCase().includes("fuck you")){
         botMessage = "Your excessive desire makes me confused.";                                             }
         
-    if(lastUserMessage.toLowerCase().includes("understand")||
-       lastUserMessage.toLowerCase().includes("why")){
+    if(lastUserMessage.toLowerCase().includes("mean")||
+       lastUserMessage.toLowerCase().includes("get")){
         botMessage = "No servant, no life?";
     }
-    if(lastUserMessage.toLowerCase().includes("mean") ||
+    if(lastUserMessage.toLowerCase().includes("understand") ||
        lastUserMessage.toLowerCase().includes("serious")||
         lastUserMessage.toLowerCase().includes("wrong")){
         botMessage = "Never mind, it's not important^_^";
     }
-    if(lastUserMessage.toLowerCase().includes("friend")) {
+    if(lastUserMessage.toLowerCase().includes("friend")||
+        lastUserMessage.toLowerCase().includes("lonely")){
         botMessage = "Yes, you are my friend.";
     }
     if(lastUserMessage.toLowerCase().includes("user")||
