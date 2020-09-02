@@ -1,11 +1,11 @@
 
 # About This Project
-- Title: I am here to serve you.
+- Title: After You Die, Your Digital Self Could Live on as a "CHATBOT
 - Year: 2018
 - Medium: Interactive website
 - Dimension: Screensize 1440px *900px
 
-[-> Visit here](https://uglykiki.github.io/jschatbot/)
+[-> Visit here](https://uglykiki.github.io/bot-lives/)
 
 # Artist Statement
 Our idea is about to make a kind of cultural critique to what social network is doing to human, create a chatbot on the website with a certain scenario that shows people specific narratives(or scene).
